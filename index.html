@@ -2,59 +2,84 @@
 <html>
 <head>
 <style>
-body { background-color: rgba(230, 230, 250, 0.5);
+body { background-color: #F5F5F5;
 }
 .h1style {text-align: center;
 padding: 10px;
-background-color: #ADD8E6;
+background-color: #708090;
 color: white;
 width: 500px;
 margin-left: auto;
  margin-right: auto;
 }
 .myDiv {
-  border: 3px outset gray;
-  background-color: #F8F8FF;    
+border: 2px solid white;
+  background-color: #778899;    
   text-align: center;
   width: 700px;
   margin-left: auto;
  margin-right: auto;
-}
-p {
-float: left;
+ color: white;
 }
 .p1style {
  margin-left: 450px;
 }
 .p2style, .p3style{
-overflow: auto;
-float: left;
+position: absolute;
 background-color: white;
-margin-top: 20px;
-width: 400px;
-padding: 10px 10px 10px 20px;
+margin: 20px;
+width: 300px;
+padding: 10px 10px 10px 15px;
+float: left;
 }
 .h3style {
+font-family: 'Brush Script MT', 'Lucida Handwriting', 'Comic Sans MS';
+font-weight: lighter;
+font-size: 24px;
 text-align: center;
+background-color: darkgray;
+padding: 10px;
+color: white;
+}
+.box {
+  float: left;
+  width: 340px;
+  padding: 20px;
+  text-align: center;
+  margin: 50px;
+  background-color: white;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 </style>
 </head>
 <body> 
 <h1 class= "h1style">Going Over Macro-Nutrients</h1>
-
+<br>
+<br>
 <div class="myDiv">
   <h2>The following information will go over more details breaking down Macro-Nutrients and their functionality.</h2>
   <p class= "p1style">By: Kevin E. Morales</p>
 </div>
 <br>
-  <br>
-<div class="p2style">
-<h3 class= "h3style">Protein</h3>
-<p>Protein is often discussed when it comes to nutrition and its importance. It consists of amino acids that are extremely important when it comes to cellular repair processes.</p>
-</div>
-<div class="p3style">
-<h3 class= "h3style">Carbs</h3>
-<p> Carbs are extremely important when it comes to energy.</p>
+<br>
+<div class="clearfix">
+  <div class="box">
+  <h3 class="h3style">Protein</h3>
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <h3 class="h3style">Carbs</h3>
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <h3 class="h3style">Fats</h3>
+  <p>Some text inside the box.</p>
+  </div>
 </div>
 </body>
 </html>
