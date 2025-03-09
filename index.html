@@ -4,6 +4,14 @@
 <style>
 body { background-color: #F5F5F5;
 }
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}  
+tr.gray {
+background-color: #778899;
+color: White;
+}
 .h1style {text-align: center;
 padding: 10px;
 background-color: #708090;
@@ -48,12 +56,15 @@ color: white;
   text-align: center;
   margin: 50px;
   background-color: white;
+  border: 2px solid darkgray;
 }
 
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
+}
+p {font-family: Arial, Helvetica, sans-serif;
 }
 </style>
 </head>
@@ -70,16 +81,46 @@ color: white;
 <div class="clearfix">
   <div class="box">
   <h3 class="h3style">Protein</h3>
-  <p>Some text inside the box.</p>
+  <p>Protein is a macronutrient that consists of amino acids which repair broken cells within the body. For the purposes of exercise science regarding powerlifting, bodybuilding etc. consuming appx. 1.8-2.2 grams per kg of bodyweight will suffice.</p>
   </div>
   <div class="box" style="background-color:#ccc">
   <h3 class="h3style">Carbs</h3>
-  <p>Some text inside the box.</p>
+  <p>Carbohydrates are important as a primary source of fuel. Red blood cells process this source of fuel in the most efficient manner, which if deprived, lead to the production of ketones hence ketosis. While ketosis is a good tool for some individuals who need epilepsy mitigation, an average healthy individuals benefits more off of carbohydrate intake.</p>
   </div>
   <div class="box" style="background-color:#ddd">
   <h3 class="h3style">Fats</h3>
-  <p>Some text inside the box.</p>
+  <p>Fats or lipids are extremely important as a necessary component for survival. They function to absorb essential nutrients such as fat-soluble vitamins like vitamins A, D, E, and K. Cell membranes within the body also use fat to maintain their structure and integrity.</p>
   </div>
 </div>
+<table class= "center">
+        <thead>
+            <tr class= "gray">
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Activity</th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th>Maintenance Calories</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Male</td>
+                <td>28</td>
+              <td>Light Activity</td>
+                <td>5'10</td>
+                  <td>167</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>Female</td>
+                <td>28</td>
+                <td>Very Active</td>
+                <td>5'4</td>
+                <td>115</td>
+                <td>2273</td>
+            </tr>
+        </tbody>
+</table>
 </body>
 </html>
